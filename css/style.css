@@ -1,0 +1,18 @@
+.navbar {
+  background-color: rgb(87, 184, 253);
+  height: 100px;
+}
+
+.table {
+  border: 1px 0 solid black;
+  border-collapse: collapse;
+}
+
+/* #personnes {
+  display: none;
+} */
+
+#mariages {
+  text-align: center;
+  vertical-align: middle;
+}

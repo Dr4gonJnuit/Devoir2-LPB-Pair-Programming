@@ -1,0 +1,17 @@
+Je propose comme deux tables : Personnes et Mariage
+
+Personne ->
+    id int
+    nom [varchar]
+    prénom [varchar]
+    sexe [M ou F] juste pour être simple
+    date_naissance [date]
+
+Mariage ->
+    id [int]
+    id_personne1 [int]
+    id_personne2 [int]
+    date_mariage [date]
+    divorce [bool] peut être null
+    date_divorce [date] peut être null
+    raison_divorce [varchar] peut être null

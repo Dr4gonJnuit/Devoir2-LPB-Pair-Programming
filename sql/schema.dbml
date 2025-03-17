@@ -1,0 +1,34 @@
+Project Mariages {
+  database_type: 'mysql'
+  Note: 'Ce fichier contient le schéma de la base de données du second devoir du cours LPB'
+}
+
+Table Personnes [headercolor: #3942be] {
+  id int [pk, increment]
+  first_name varchar(50) [not null]
+  last_name varchar(50) [not null]
+  gender genders
+  birth_date date [not null]
+}
+
+Table Mariages [headercolor:#000000] {
+  id int [pk, increment]
+  id_personne1 int
+  id_personne2 int
+  mariage_date date [not null]
+  divorce_date date
+  divorce_reason varchar(255)
+
+  Indexes {
+    (id_personne1, id_personne2) [unique]
+  }
+
+}
+
+Enum genders {
+  "M"
+  "F"
+}
+
+ref: Personnes.id < Mariages.id_personne1
+ref: Personnes.id < Mariages.id_personne2
