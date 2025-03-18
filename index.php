@@ -10,8 +10,21 @@ $db = new DBConnexion();
 $resultPersonne = $db->findAll('Personnes');
 $resultMariages = $db->findAll('Mariages');
 
+// Get divorces
 $query = "SELECT * FROM `Mariages` WHERE divorce_date IS NOT NULL";
 $resultDivorces = $db->queryExecute($query);
+
+// Get males
+$query = "SELECT * FROM `Personnes` WHERE gender = 'M'";
+$resultMales = $db->queryExecute($query);
+
+// Get females
+$query = "SELECT * FROM `Personnes` WHERE gender = 'F'";
+$resultFemales = $db->queryExecute($query);
+
+// Get mariage same sex
+$query = "SELECT * FROM `Mariages` WHERE (SELECT `gender` FROM `Personnes` WHERE `id` = `id_personne1`) = (SELECT `gender` FROM `Personnes` WHERE `id` = `id_personne2`)";
+$resultSameSex = $db->queryExecute($query);
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +68,13 @@ $resultDivorces = $db->queryExecute($query);
                     // Display the data from the database
                     for ($i = 0; $i < count($resultPersonne); $i++) {
                         $row = $resultPersonne[$i];
-                        echo "<tr>";
+                        if (in_array($row, $resultFemales)) {
+                            echo "<tr class='table-danger'>";
+                        } elseif (in_array($row, $resultMales)) {
+                            echo "<tr class='table-primary'>";
+                        } else {
+                            echo "<tr>";
+                        }
                         echo "<td>" . $row['id'] . "</td>";
                         echo "<td>" . $row['last_name'] . "</td>";
                         echo "<td>" . $row['first_name'] . "</td>";
