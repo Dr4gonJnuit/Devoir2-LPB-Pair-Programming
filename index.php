@@ -9,6 +9,9 @@ $db = new DBConnexion();
 
 $resultPersonne = $db->findAll('Personnes');
 $resultMariages = $db->findAll('Mariages');
+
+$query = "SELECT * FROM `Mariages` WHERE divorce_date IS NOT NULL";
+$resultDivorces = $db->queryExecute($query);
 ?>
 
 <!DOCTYPE html>

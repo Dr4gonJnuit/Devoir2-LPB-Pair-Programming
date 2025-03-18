@@ -38,11 +38,10 @@ class DBConnexion
             $this->username = $GLOBALS['username'];
             $this->password = $GLOBALS['password'];
 
-            echo "Username: $this->username<br>\n";
-            echo "Password: $this->password<br>\n";
-
             // Create a new PDO connection with the dynamic parameters
             $this->conn = new PDO("mysql:host=" . self::SERVER_NAME . ";dbname=TP2LPBDB", $this->username, $this->password);
+            // Set the connection to use utf8mb4 character set
+            // $this->conn->exec("SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'");
 
             // Set error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -96,6 +95,30 @@ class DBConnexion
 
             // Prepare the SQL query
             $stmt = $this->conn->prepare("SELECT * FROM $tableName");
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            echo "Error with fetchAll : " . $e->getMessage();
+            return null;
+        }
+    }
+
+    /**
+     * Executes a query on the database.
+     * @param string $query SQL query to execute.
+     * @return array|null Returns an array of rows or null if the connection is null.
+     */
+    public function queryExecute($query)
+    {
+        try {
+            // Check if the connection is null
+            if ($this->conn === null) {
+                return null;
+            }
+
+            // Prepare the SQL query
+            $stmt = $this->conn->prepare($query);
             $stmt->execute();
 
             return $stmt->fetchAll(PDO::FETCH_ASSOC);

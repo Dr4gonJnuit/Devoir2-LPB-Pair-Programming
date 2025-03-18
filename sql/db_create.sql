@@ -1,5 +1,5 @@
 -- SQLBook: Code
-CREATE DATABASE IF NOT EXISTS `TP2LPBDB`;
+CREATE DATABASE IF NOT EXISTS `TP2LPBDB` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE `TP2LPBDB`;
 
@@ -26,3 +26,5 @@ ADD FOREIGN KEY (`id_personne1`) REFERENCES `Personnes` (`id`);
 
 ALTER TABLE `Mariages`
 ADD FOREIGN KEY (`id_personne2`) REFERENCES `Personnes` (`id`);
+
+SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
