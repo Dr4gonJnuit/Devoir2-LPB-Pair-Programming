@@ -1,7 +1,7 @@
 -- SQLBook: Code
 USE `TP2LPBDB`;
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -17,7 +17,7 @@ VALUES (
         '1954-06-27'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -33,7 +33,7 @@ VALUES (
         '1927-03-19'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -49,7 +49,7 @@ VALUES (
         '1943-06-24'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -65,7 +65,7 @@ VALUES (
         '1990-01-14'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -81,7 +81,7 @@ VALUES (
         '1930-04-12'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -97,7 +97,7 @@ VALUES (
         '1989-08-07'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -113,7 +113,7 @@ VALUES (
         '1974-06-12'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -129,7 +129,7 @@ VALUES (
         '1972-06-14'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -145,7 +145,7 @@ VALUES (
         '1969-10-16'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -161,7 +161,7 @@ VALUES (
         '1975-11-16'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -177,7 +177,7 @@ VALUES (
         '1998-07-06'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -193,7 +193,7 @@ VALUES (
         '1978-03-18'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -209,7 +209,7 @@ VALUES (
         '1955-10-14'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -225,7 +225,7 @@ VALUES (
         '1938-01-11'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -241,7 +241,7 @@ VALUES (
         '1957-11-05'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -257,7 +257,7 @@ VALUES (
         '1995-11-28'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -273,7 +273,7 @@ VALUES (
         '1945-02-18'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -289,7 +289,7 @@ VALUES (
         '1999-05-09'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -305,7 +305,7 @@ VALUES (
         '1984-12-14'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -321,7 +321,7 @@ VALUES (
         '1978-11-12'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -337,7 +337,7 @@ VALUES (
         '1972-05-24'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -353,7 +353,7 @@ VALUES (
         '2001-08-31'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -369,7 +369,7 @@ VALUES (
         '1950-06-18'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -385,7 +385,7 @@ VALUES (
         '1938-12-26'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -401,7 +401,7 @@ VALUES (
         '1956-05-08'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -417,7 +417,7 @@ VALUES (
         '1974-03-20'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -433,7 +433,7 @@ VALUES (
         '1947-12-16'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -449,7 +449,7 @@ VALUES (
         '2001-10-19'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -465,7 +465,7 @@ VALUES (
         '1955-07-20'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -481,7 +481,7 @@ VALUES (
         '1956-06-16'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -497,7 +497,7 @@ VALUES (
         '1954-10-25'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -513,7 +513,7 @@ VALUES (
         '1969-03-07'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -529,7 +529,7 @@ VALUES (
         '1947-10-16'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -545,7 +545,7 @@ VALUES (
         '1935-02-15'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -561,7 +561,7 @@ VALUES (
         '1971-09-09'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -577,7 +577,7 @@ VALUES (
         '1951-02-25'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -593,7 +593,7 @@ VALUES (
         '1993-12-01'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -609,7 +609,7 @@ VALUES (
         '1963-08-20'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -625,7 +625,7 @@ VALUES (
         '1943-04-04'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -641,7 +641,7 @@ VALUES (
         '1970-07-30'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -657,7 +657,7 @@ VALUES (
         '1978-09-27'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -673,7 +673,7 @@ VALUES (
         '1954-05-03'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -689,7 +689,7 @@ VALUES (
         '1981-12-25'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -705,7 +705,7 @@ VALUES (
         '1925-10-23'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -721,7 +721,7 @@ VALUES (
         '1981-03-09'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -737,7 +737,7 @@ VALUES (
         '1976-01-05'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -753,7 +753,7 @@ VALUES (
         '1950-05-03'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -769,7 +769,7 @@ VALUES (
         '1932-01-12'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -785,7 +785,7 @@ VALUES (
         '1972-01-20'
     );
 
-INSERT INTO
+INSERT IGNORE INTO
     Personnes (
         id,
         first_name,
@@ -802,7 +802,7 @@ VALUES (
     );
 
 -- Mariages encore en cours
-INSERT INTO
+INSERT IGNORE INTO
     `Mariages` (
         `id_personne1`,
         `id_personne2`,
@@ -817,7 +817,7 @@ VALUES (1, 7, '2023-06-10'),
     (22, 19, '2005-06-30');
 
 -- Mariages avec divorce
-INSERT INTO
+INSERT IGNORE INTO
     `Mariages` (
         `id_personne1`,
         `id_personne2`,
@@ -876,7 +876,7 @@ VALUES (
     );
 
 -- Remariage après divorce
-INSERT INTO
+INSERT IGNORE INTO
     `Mariages` (
         `id_personne1`,
         `id_personne2`,
